@@ -1,0 +1,154 @@
+/*------------------------------------*\
+    
+    Contained Image + Text Block Customizations - Global Styling
+
+    The styles you add to this file will be applied to the 'Contained Image + Text' block. 
+    If there is any reasons why you would need to style them seperately,
+    please create a block-specific stylesheet for it (don't forget to resiger that block-specific stylesheet in acf-start-blocks.php)
+
+\*------------------------------------*/
+
+
+
+
+.image-text__img img {
+    width: 100%;
+}
+
+.image-text__img-wrapper {
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 3px 20px rgba(56,73,102,0.16);
+    margin-bottom: 35px;
+    height: 250px;
+}
+
+
+.image-text__img-wrapper img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+}
+
+.image-text__img-wrapper img.box-shadow {
+    box-shadow: 0 3px 20px rgba(56,73,102,0.16);
+    
+}
+
+.bg-blue {
+    background-color: #E9EEF4;
+    padding: 40px 0;
+}
+
+@media (min-width: 768px) {
+
+    .image-text__img-wrapper {
+        padding: 0;
+        margin-bottom: 35px;
+        height: 384px;
+        box-shadow: none;
+    }
+
+    .image-row {
+        box-shadow: 0 3px 20px rgba(56,73,102,0.16);
+        border-radius: 4px;
+        margin: 0;
+        padding: 26px 10px;
+    }
+
+    .bg-blue {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .bg-blue .image-row {
+        background-color: #E9EEF4;
+        box-shadow: none;
+    }
+    
+    
+}
+@media (min-width: 1200px) {
+    .image-row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    
+    .image-text .image-row {
+        align-items: center
+    }
+
+    .flex-opposite {
+        flex-direction: row-reverse;
+    }
+
+    .image-row {
+        box-shadow: none;
+        border-radius: 4px;
+        margin: 0 0;
+        padding: 0;
+    }
+
+    .bg-blue .image-row {
+        background-color: transparent;
+    }
+
+    .image-text__text {
+        padding: 65px 60px;
+        position: relative;
+    }
+
+    .image-text--right .image-text__text::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-shadow: 0 3px 20px rgba(56,73,102,0.16);
+        border-radius: 4px;
+        height: 100%;
+        width: calc(100% + 208px);
+        z-index: -1;
+    }
+
+    .image-text__img-wrapper {
+        margin: 0;
+        height: auto;
+        position: relative;
+        z-index: 2;
+        box-shadow: 0 3px 20px rgba(56,73,102,0.16);
+    }
+
+    .image-text--left .image-text__text::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -208px;
+        box-shadow: 0 3px 20px rgba(56,73,102,0.16);
+        border-radius: 4px;
+        height: 100%;
+        width: calc(100% + 208px);
+        background-color: #fff;
+    }
+
+    .image-text--left .image-text__text::before {
+        z-index: -1;
+    }
+
+    .bg-blue .image-text__text::before {
+        box-shadow: none;
+        background-color: #E9EEF4;
+    }
+
+    .image-text__text {
+        z-index: 1;
+    }
+
+
+
+}

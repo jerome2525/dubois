@@ -1,0 +1,149 @@
+.masthead-slide {
+    position: relative;
+}
+
+.masthead-slide__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    display: block;
+}
+
+.masthead-slide__content {
+    position: relative;
+    padding: 70px 0 125px 0;
+}
+
+.masthead-slide__content {
+    position: relative;
+    color: #fff;
+}
+
+.sub-heading {
+    color: #DBE4EE;
+    font-size: 14px;
+    position: relative;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.sub-heading::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #F7744C;
+    left: 0;
+    bottom: 0;
+}
+
+.masthead-slide__content h1 {
+    padding-bottom: 30px;
+}
+
+.masthead__wrapper {
+    max-width: 768px;
+}
+
+.banner-pattern {
+    position: absolute;
+    right: -0;
+    top: 200px;
+    height: 605px;
+}
+
+.banner-pattern img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    display: block;
+}
+
+.masthead--homepage .slick-dots {
+    width: 100%;
+    max-width: 1353px;
+    margin: 0 auto;
+    right: 0;
+    bottom: 10%;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.masthead--homepage .slick-dots li {
+    margin: 0 9px 0 0;
+    padding: 0;
+    width: 71px;
+    height: 7px;
+    border-radius: 0;
+}
+
+.masthead--homepage .slick-dots li.slick-active button {
+    background: #ffffff;
+    border-radius: 0;
+}
+
+
+@media (min-width: 768px) {
+    .masthead--homepage {
+        padding-top: 80px;
+    }
+    
+    .masthead-slide__content {
+        padding: 92px 0 170px 0;
+    }
+
+    .sub-heading {
+        font-size: 22px;
+        padding-bottom: 0;
+        margin-bottom: 25px;
+        padding-right: 75px;
+        display: inline-block;
+    }
+    
+    .sub-heading::after {
+        left: auto;
+        right: 0;
+        top: 50%;
+        margin-top: -1px;
+        width: 60px;
+    }
+
+    .masthead-slide__content h1 {
+        font-size: 50px;
+    }
+
+    .masthead--homepage .slick-dots {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .masthead--homepage .slick-dots li {
+        width: 124px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .masthead--homepage {
+        padding-top: 118px;
+    }
+
+    .masthead-slide__content {
+        padding: 136px 0 193px 0;
+    }
+
+    .masthead-slide__content h1 {
+        font-size: 60px;
+    }
+
+    .masthead--homepage .slick-dots {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

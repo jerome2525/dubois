@@ -1,0 +1,190 @@
+/*------------------------------------*\
+    
+    WebFX Slick Customizations - Global styling for all slider/carousels
+
+    Add custom slider styling to this file if it should be applied to all slick sliders on the site
+    Otherwise, put your slider-specific styles in individual block stylesheets
+
+\*------------------------------------*/
+
+
+/* Preloader affect for your slider */
+
+.js-slider-has-preloader {
+    /* Add class to slider to show  */
+    min-height: 50px;
+    position: relative;
+}
+
+.js-slider-has-preloader:before {
+    content: url('../img/loading.gif');
+    /* Create and upload a loading gif to your image directory */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    /* Update width based on gif size */
+    height: 50px;
+    /* Update height based on gif size */
+    transition: all .5s ease;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.js-slider-has-preloader-init:before {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+
+
+/* Only show the 1st slide while your slider is loading - Utility Classes
+NOTE: Add the .fx-slider class to the wrapper that is holding your entire slider.
+NOTE: Add the .fx-slide class to the wrapper of each individual slide.
+Guru: https://app.getguru.com/card/ixR67EpT/Slick-Slider
+*/
+
+.fx-slider .fx-slide {
+    display: none;
+}
+
+.fx-slider .fx-slide:first-child { 
+    display: block;
+}
+
+.fx-slider.slick-initialized .fx-slide { 
+    display: block;
+}
+
+
+.slick-dots {
+    padding: 0 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.slick-dots li {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 12px 0 0;
+    padding: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    line-height: 1em;
+    text-align: center;
+    background: rgba(0,35,54,0.46);
+}
+    
+.slick-dots li::before {
+    display: none;
+}
+
+.slick-dots li:only-child {
+    display: none;
+}
+
+.slick-dots li button {
+    display: block;
+    cursor: pointer;
+    outline: none;
+    border-radius: 50%;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0;
+    text-indent: -99999px;
+}
+
+.slick-dots li.slick-active button {
+    background: #4FCDDD;
+}
+
+/* slick-prev,
+slick-next */
+
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: #FFFFFF;
+    z-index: 9;
+    text-align: center;
+    color: #000000;
+    border-radius: 4px;
+}
+
+.slick-next {
+    right: 22px;
+}
+
+.slick-prev {
+    right: 75px;
+}
+
+.slick-prev::before {
+    content: "\e901";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 19px;
+    line-height: 1.8em;
+    font-family: 'icomoon';
+}
+
+.slick-next::before {
+    content: "\e902";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 19px;
+    line-height: 1.8em;
+    font-family: 'icomoon';
+}
+
+@media (min-width: 1200px) {
+    .slick-next:hover,
+    .slick-next:focus,
+    .slick-prev:hover,
+    .slick-prev:focus {
+        color: #FFFFFF;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

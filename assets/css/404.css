@@ -1,0 +1,69 @@
+/**
+ * Add styling for 404 page here
+ */
+
+
+.error-page-section .product-image-item {
+    height: 158px;
+}
+
+.error-page-section:before {
+    display: none; 
+}
+
+.error-page-section .product-image-wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.error-page-section .product-image-item {
+    grid-column: auto;
+}
+
+.error-page-section .product-image-content {
+    display: flex;
+    align-items: center;
+}
+
+.error-page-section .product-image-content .btn-primary {
+    z-index: 9;
+}
+
+.search-404  button {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 15px;
+    height: 41px;
+    color: #174D9A;
+    font-size: 18px;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.search-404  .search-form {
+    position: relative;
+}
+
+@media (min-width: 1200px) {
+    .error-page-section .product-image-content {
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+    .search-404 {
+        margin-bottom: 30px;
+    }
+    .error-page-section {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .error-page-section .product-image-content {
+        padding: 17px;
+    }
+}

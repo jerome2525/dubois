@@ -1,0 +1,269 @@
+/*------------------------------------*\
+    
+    Half & Half Image + Text Block Customizations - Global Styling
+
+    The styles you add to this file will be applied to the 'Half & Half Image + Text' block. 
+    If there is any reasons why you would need to style this separately,
+    please create a block-specific stylesheet for it (don't forget to register that block-specific stylesheet in acf-start-blocks.php)
+
+\*------------------------------------*/
+
+.half-and-half.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.half-and-half-image, 
+.half-and-half-text {
+    position: relative;
+    flex: 0 0 100%;
+}
+
+.half-and-half { 
+    position: relative;
+}
+
+.half-and-half-text {
+    padding: 45px 22px;
+}
+
+.half-and-half-text.right {
+    margin-right: auto;
+}
+
+.half-and-half-text.left {
+    margin-left: auto;
+}
+
+.half-and-half.white-bg {
+    background-color: #ffffff;
+}
+
+.half-and-half.gray-bg {
+    background-color: #f7f7f7;
+}
+
+.half-and-half-image {
+    display: none;
+}
+
+.blue-bg {
+    background-color: #082449;
+}
+
+.blue-bg h2,
+.blue-bg p {
+    color: #fff;
+}
+
+.half-and-half-text__wrapper {
+    padding-right: 30px;
+}
+
+.half-and-half-text__wrapper h4 {
+    color: #B5BEC9;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.half-and-half-text__wrapper h4 span {
+    padding-bottom: 0;
+}
+
+.half-and-half-text__wrapper h4 span:before {
+    display: none;
+}
+
+.half-and-half-text__wrapper h4 img {
+    margin-right: 13px;
+}
+
+
+.half-and-half-text__wrapper p a {
+    color: #EE5E32;
+    transition: all ease 0.3s;
+    border-bottom: 2px solid #EE5E32;
+    display: inline-block;
+}
+
+.half-and-half-flag-image {
+    display: none;
+}
+
+.half-and-half-text__wrapper {
+    position: relative;
+    z-index: 2;
+}
+.half-and-half-text__wrapper h2 {
+    padding-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+    .half-and-half-text {
+        padding: 50px 42px 15px 52px;
+    }
+
+    .half-and-half-image {
+        display: block;
+        max-width: 630px;
+    }
+
+    .half-and-half-image img {
+        position: relative;
+        left: -20px;
+        z-index: 1;
+        margin-top: -60px;
+        object-fit: contain;
+    }
+
+    .half-and-half-flag-image {
+        display: block;
+        position: absolute;
+        bottom: 260px;
+        left: 355px;
+        width: 365px;
+    }
+
+    .half-and-half-text__wrapper h4 img {
+        display: none;
+    }
+
+    .half-and-half-text__wrapper h4 span:before {
+        display: block;
+        bottom: 16px;
+    }
+
+    .half-and-half-text__wrapper h4 {
+        margin-bottom: 10px;
+    }
+
+    .half-and-half-text__wrapper h2 {
+        padding-bottom: 15px;
+    }
+
+    .half-and-half-text__wrapper p a {
+        border: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .half-and-half-flag-image {
+        right: 76px;
+        width: 471px;
+        left: auto;
+        bottom: 377px;
+    }
+
+    .half-and-half-image {
+        max-width: 800px;
+    }
+}
+    
+@media (min-width: 1200px) {
+    .half-and-half.flex-row {
+        flex-direction: row-reverse;
+    }
+
+    .half-and-half-image, 
+    .half-and-half-text {
+        position: relative;
+        flex: 0 0 50%;
+    }
+    
+    .half-and-half-image img {
+        position: absolute;
+    }
+    
+    .half-and-half-text {
+        padding: var(--margins) 50px;
+    }
+
+    .half-and-half-image img {
+        bottom: 0;
+    }
+
+    .half-and-half-text {
+        padding: var(--margins) 80px;
+    }
+
+    .half-and-half-text__wrapper {
+        padding: 102px 0;
+        padding-right: 22px;
+    }
+
+    .half-and-half-flag-image {
+        left: 205px;
+    }
+
+    .half-and-half-text.right {
+        max-width: 730px;
+    }
+
+    .half-and-half-text__wrapper p a {
+        border-bottom: 2px solid #EE5E32;
+    }
+
+    .half-and-half-text__wrapper p a:hover {
+        border-bottom: 2px solid #fff;
+        color: #fff;
+    }
+
+    .half-and-half-text__wrapper h2 {
+        padding-bottom: 25px;
+    }
+
+    .half-and-half-text__wrapper h4 {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .half-and-half-image {
+        max-width: 823px;
+    }
+
+    .half-and-half-flag-image {
+        width: 525px;
+        left: 175px;
+        bottom: 290px;
+    }
+
+    .half-and-half-text.right {
+        max-width: 794px;
+        padding-left: 64px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .half-and-half-flag-image {
+        left: 205px;
+        bottom: 306px;
+    }
+
+    .half-and-half-text.right {
+        max-width: 766px;
+        padding-left: 104px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .half-and-half-flag-image {
+        left: 295px;
+        bottom: 347px;
+    }
+}
+
+@media (min-width: 2000px) {
+    .half-and-half-image {
+        margin-left: auto;
+    }
+
+    .half-and-half-flag-image {
+        left: -458px;
+        bottom: 347px;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

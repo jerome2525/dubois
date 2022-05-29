@@ -1,0 +1,173 @@
+/*------------------------------------*\
+    
+    WebFX CF7 Customizations - Global styling for all CF7 Forms
+
+    Add custom CF7 form styling to this file if it should be applied to all CF7 forms on the site
+    Otherwise, put your block-specific styles in individual block stylesheets so that various block-specific styles aren't loaded on every CF7 form
+
+\*------------------------------------*/
+
+
+/* Default Radio/Checkbox Style (if using CF7) */
+.wpcf7-radio .wpcf7-list-item,
+.wpcf7-checkbox .wpcf7-list-item {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    /* incase items go to 2 lines */
+}
+
+.wpcf7-radio .wpcf7-list-item-label,
+.wpcf7-checkbox .wpcf7-list-item-label {
+    margin-left: 5px;
+    color: #3E5471;
+    font-weight: 400;
+    text-transform: none;
+}
+
+/* CF7 Validation (Remove if not using CF7) */
+
+/* Individual field error messages */
+.wpcf7-not-valid-tip,
+.wpcf7-response-output {
+    font-size: 12px !important;
+    color: #EE5E32 !important;
+    font-weight: 800 !important;
+    text-transform: uppercase;
+    padding-top: 6px;
+}
+
+div.wpcf7-response-output {
+    font-size: 16px !important;
+}
+.wpcf7-form.sent .wpcf7-not-valid-tip,
+.wpcf7-form.sent .wpcf7-response-output {
+    color: #174D9A !important;
+}
+
+/* Entire form error message */
+.wpcf7-response-output {
+    border-color: transparent !important;
+    padding: 0 !important;
+    margin: 16px 0 0 !important;
+}
+
+/* Styling for fields that have errors */
+select.wpcf7-not-valid,
+textarea.wpcf7-not-valid,
+input.wpcf7-not-valid,
+.wpcf7-not-valid .choices {
+    outline: none; /* Removes blue border on focus */
+    border: 1px solid #EE5E32;
+    box-shadow: inset 8px 0px 0px 0px rgb(238 94 50);
+}
+
+.wpcf7-form .form-col {
+    position: relative;
+}
+
+.wpcf7-form .wpcf7-spinner {
+    position: absolute;
+    right: -6px;
+    top: 44px;
+}
+
+.wpcf7-form .wpcf7-submit:hover {
+    background: #DE2313;
+}
+
+.wpcf7-form .choices {
+    margin-bottom: 0;
+}
+
+.wpcf7-form .choices.is-open:after {
+    transform: rotate(180deg) !important;
+    border-radius: 4px 0 0 4px;
+    line-height: 3.8;
+}
+
+.wpcf7-form .choices[data-type*='select-one']:after {
+    transform: none;
+    top: 2%;
+}
+
+div.choices__placeholder {
+    font-size: 16px;
+    color: #757575;
+    opacity: 1;
+}
+
+.wpcf7-form .choices__list--single {
+    padding-left: 9px;
+}
+
+.wpcf7-form .choices__list--single .choices__item {
+    font-size: 16px;
+}
+
+.wpcf7-form .choices__inner.error {
+    outline: none;
+    border: 1px solid #EE5E32;
+    box-shadow: inset 8px 0px 0px 0px rgb(238 94 50);
+}
+
+.wpcf7-form .wpcf7-radio span,
+.wpcf7-form input[type="checkbox"], 
+.wpcf7-form input[type="radio"] {
+    cursor: pointer;
+}
+
+.wpcf7-form .wpcf7-radio input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+    transition: transform 3s ease-out;
+}
+
+.wpcf7-form .wpcf7-radio input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #174D9A;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.wpcf7-form input[type="checkbox"]:focus, 
+.wpcf7-form input[type="radio"]:focus {
+    box-shadow: none;
+}
+
+.wpcf7-not-valid-tip {
+    position: relative;
+}
+
+.info {
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #EE5E32;
+    color: #fff;
+    padding: 1px 10px;
+    border-radius: 4px;
+    position: absolute;
+    top: -40px;
+    right: 9px;
+}
+
+.dropdown-col .info {
+    right: 64px;
+}

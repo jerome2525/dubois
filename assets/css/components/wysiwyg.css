@@ -1,0 +1,333 @@
+/*------------------------------------*\
+    
+    WebFX WYSIWYG Customizations - Global styling for all ACF WYSIWYG's
+
+    Add custom WYSIWYG styling to this file if it should be applied to all ACF WYSIWYG's on the site
+    Otherwise, put your block-specific styles in individual block stylesheets
+
+\*------------------------------------*/
+
+
+
+.bg-white {
+    background: #ffffff;
+}
+
+
+.bg-light-blue {
+    background: #E9EEF4;
+}
+
+.wysiwyg__contact {
+    background-color: #DBE4EE;
+    padding: 26px 22px 35px 22px;
+    border-radius: 4px;
+    margin-top: 35px;
+}
+
+.wysiwyg__contact h3,
+.wysiwyg__contact h4 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.wysiwyg__contact h4 span {
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+.wysiwyg__contact h4 span::before {
+    left: -40px;
+    top: 50%;
+    margin-top: -1px;
+}
+
+.wysiwyg__contact h4 span::after {
+    right: -40px;
+    top: 50%;
+    margin-top: -1px;
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: rgba(238, 94, 50, .7);
+}
+
+.wysiwyg blockquote {
+    margin: 0;
+}
+
+.wysiwyg blockquote p {
+    background-color: #fff;
+    margin: 0 0 30px 0;
+    border-radius: 4px;
+    box-shadow: 0 3px 20px rgba(56,73,102,0.16);
+    padding: 20px 18px;
+    border-bottom: 3px solid #EE5E32;
+    font-size: 15px;
+    font-weight: 700;
+    color: #082449;
+    text-transform: uppercase;
+    line-height: 1.8em;
+}
+
+.bg-pattern {
+    position: relative;
+    z-index: 1;
+}
+
+.bg-pattern::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../../img/pattern.png) 0 0 repeat;
+    width: 100%;
+    height: 100%;
+    opacity: 0.53;
+    z-index: -1;
+}
+
+.wysiwyg__listing ul {
+    margin: 0 0 0 0;
+    padding: 10px 0 0 0;
+}
+
+.wysiwyg__listing ul li {
+    margin: 20px 0 0 0;
+    padding: 19px 25px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 3px 15px rgba(56,73,102,0.17);
+    font-size: 18px;
+    transition: all .3s ease-in-out;
+}
+
+.wysiwyg__listing ul li::before {
+    display: none;
+}
+
+.wysiwyg__listing ul li a {
+    margin: 0;
+    padding: 0 48px 0 0;
+    border: none;
+    line-height: 1.1111em;
+    position: relative;
+    display: block;
+    color: #3E5471;
+    font-weight: 800;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+}
+
+.wysiwyg__listing ul li a:hover {
+}
+
+
+.wysiwyg__listing ul li a::after {
+    content: '\e902';
+    font-family: 'icomoon';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    font-size: 24px;
+    color: #EE5E32;
+    font-weight: normal;
+    margin-top: -12px;
+}
+
+.feature-setion {
+    padding-bottom: 20px;
+}
+
+.wysiwyg__full-text h4, 
+.wysiwyg__full-text .h4,
+.wysiwyg__left-text h4, 
+.wysiwyg__left-text .h4 {
+    position: relative;
+    display: inline-block;
+    padding-right: 80px;
+    padding-bottom: 0;
+}
+
+.wysiwyg__full-text h4:before, 
+.wysiwyg__full-text .h4:before,
+.wysiwyg__left-text h4:before, 
+.wysiwyg__left-text .h4:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 30px;
+    height: 2px;
+    background: rgba(238,94,50,.7);
+}
+
+
+.wysiwyg .wpcf7-form .wpcf7-submit {
+    width: 100%;
+}
+
+.wysiwyg p a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.wysiwyg p a:hover {
+    border: 0;
+}
+
+.wysiwyg p a::after {
+    content: '';
+    position: absolute;
+    background-color: #EE5E32;
+    width: 100%;
+    height: 3px;
+    bottom: -3px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+
+.wysiwyg p a.disabled-link-effects::after {
+    display: none;
+}
+
+.wysiwyg p a.disabled-link-effects:hover {
+    opacity: .8;
+}
+
+@media (min-width: 768px) {
+
+    .feature-setion {
+        padding-bottom: 35px;
+        padding-top: 50px;
+    }
+
+    .wysiwyg__contact {
+        padding: 41px 58px 51px 58px;
+    }
+
+    .wysiwyg__contact h4 span {
+        padding-right: 0;
+    }
+
+    .wysiwyg__contact h4 span::before {
+        left: -77px;
+        width: 60px;
+    }
+    
+    .wysiwyg__contact h4 span::after {
+        right: -77px;
+        width: 60px;
+    }
+
+    .wysiwyg blockquote p {
+        padding: 37px 42px;
+        font-size: 18px;
+    }
+
+    .wysiwyg__listing ul {
+        margin: 0 0 0 0;
+        padding: 20px 0 0 0;
+    }
+
+    .wysiwyg__listing ul li {
+        font-size: 19px;
+        padding: 22px 26px;
+    }
+
+    .wysiwyg h4:before, 
+    .wysiwyg .h4:before {
+        left: inherit;
+        right: 0;
+        bottom: 13px;
+        width: 60px;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    .feature-setion {
+        padding: 80px 0;
+    }
+
+    .wysiwyg-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .wysiwyg-listing ul li {
+        padding-right: 94px;
+        margin: 0 0 25px 0;
+    }
+
+    .wysiwyg__contact {
+        width: 420px;
+        padding: 45px 48px 55px 48px;
+        float: right;
+        margin-top: 0;
+    }
+
+    .wysiwyg__left-text {
+        float: left;
+        width: calc(100% - 420px);
+        padding-right: 85px;
+    }
+
+    .button-left .wysiwyg__left-text {
+        float: right;
+        padding-right: 0;
+        padding-left: 85px;
+    }
+
+    .button-left .wysiwyg__listing {
+        width: 420px;
+        float: left;
+    }
+
+    .wysiwyg blockquote p {
+        padding: 46px 70px 46px 50px;
+        font-size: 20px;
+    }
+
+    .wysiwyg__listing {
+        width: 420px;
+        float: right;
+    }
+
+    .wysiwyg__listing ul {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .wysiwyg__listing ul li:first-child {
+        margin-top: 0;
+    }
+    
+    .wysiwyg__listing ul li  {
+        border-left: 6px solid #E9EEF4;
+        cursor: pointer;
+    }
+
+    .wysiwyg__listing ul li:hover  {
+        border-left: 6px solid #EE5E32;
+    }
+
+    .wysiwyg__listing ul li a {
+        padding-right: 90px;
+    }
+
+    .wysiwyg__listing ul li:hover a {
+        color: #EE5E32
+    }
+
+    .wysiwyg__listing ul li a::after {
+        top: 0;
+        margin-top: -0;
+    }
+}

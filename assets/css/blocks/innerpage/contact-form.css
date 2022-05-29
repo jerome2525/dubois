@@ -1,0 +1,127 @@
+.contact-form-left h6{
+    font-size: 18px;
+    color: #3E5471;
+    font-weight: 400;
+    padding-bottom: 11px;
+    line-height: 1.6842em;
+}
+
+.contact-form-left .choices__input {
+    display: none !important;
+}
+
+.contact-form-left .choices__inner {
+    border-radius: 4px;
+}
+
+.contact-form-left p {
+    font-size: 15px;
+}
+
+.contact-form-left p a {
+    display: inline-block;
+}
+
+.contact-form-right-wrapper {
+    width: 100%;
+    max-width: 420px;
+    background-color: #E9EEF4;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 30px auto 0;
+    position: relative;
+}
+
+.contact-form-right-wrapper ul li:before {
+    display: none;
+}
+
+.contact-form-right-wrapper ul li {
+    padding-left: 30px;
+    margin-top: 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+.contact-form-right-wrapper ul li a {
+    border-color: transparent;
+    font-size: 17px;
+    font-weight: 400;
+    color: #3E5471;
+    transition: all ease 0.3s;
+}
+
+.contact-form-right-wrapper ul li a i {
+    position: absolute;
+    left: -30px;
+    top: 2px;
+    font-size: 20px;
+    color: #174D9A;
+}
+
+.contact-form-right-wrapper ul li a span {
+    color: #174D9A;
+    font-weight: 700;
+    display: block;
+}
+
+
+
+@media (min-width: 1024px) {
+    .contact-form-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+
+    .contact-form-right-wrapper {
+        margin: 0;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .contact-form-right-wrapper {
+        padding: 41px 47px 100px 47px;
+    }
+
+    .contact-form-right-image {
+        position: absolute;
+        bottom: -140px;
+        right: -32px;
+        width: 584px;
+    }
+
+    .contact-form-right-wrapper ul li {
+        padding-left: 37px;
+    }
+
+    .contact-form-right-wrapper ul li a i {
+        left: -37px;
+    }
+    .contact-form-right-wrapper ul li a:hover {
+        border-color: #174D9A;
+    }
+}
+
+
+@media (min-width: 1500px) {
+    .contact-form-right-image {
+        bottom: -190px;
+        right: -104px;
+        width: 724px;
+    }
+}
+
+
+@media (min-width: 1920px) {
+    .contact-form-right-wrapper {
+        padding: 41px 47px 214px 47px;
+    }
+
+    .contact-form-right-image {
+        bottom: -200px;
+        right: -287px;
+        width: 914px;
+    }
+}

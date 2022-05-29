@@ -1,0 +1,84 @@
+/*------------------------------------*\
+    
+    Hide/Show Text Area - Global styling for all hide/show text
+
+    This method is CSS heavy and light on JS, which is important for good SEO and CWV results
+    Find the code snippet here: https://webfxcodelibrary.webpagefxstage.com/#intermediate_cssshowhidetext
+
+\*------------------------------------*/
+
+
+/* Copy Style Bellow  */
+
+.read-more__content {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+/* Safari fix, it needs to be inline for the clamp to work on safari  */
+.read-more__wrapper {
+	display: inline;
+}
+
+
+.read-more__content.is-expanded {
+	-webkit-line-clamp: initial !important;
+}
+
+.expand {
+	cursor: pointer;
+	display: inline-block;
+	font-weight: bold;
+	text-transform: uppercase;
+	position: relative;
+	padding-right: 30px;
+	border-bottom: none;
+	font-size: 16px;
+}
+
+.expand::after {
+	content: '\e90a';
+	font-family: 'icomoon';
+	position: absolute;
+	right: 13px;
+	font-size: 12px;
+}
+
+.read-more__box {
+	line-height: 1.8em;
+	
+}
+
+.hide-p {
+	display: none;
+	padding-bottom: 30px !important;
+}
+
+.is-expanded .hide-p {
+	display: block;
+}
+
+.is-expanded .expand {
+	display: none;
+}
+.only-mobile .expand {
+	margin: 5px 0 20px 0;
+}
+
+@media (min-width: 768px) {
+	.only-mobile .read-more__content {
+		-webkit-line-clamp: initial !important;
+	}
+
+	.only-mobile .expand {
+		display: none;
+	}
+}
+
+@media (min-width: 1200px) {
+	.expand {
+		padding-left: 10px;
+	}
+}

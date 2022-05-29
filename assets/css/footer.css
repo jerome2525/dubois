@@ -1,0 +1,301 @@
+/*------------------------------------*\
+    
+    Page Footer CSS
+
+    Page footer...........The main page footer.
+
+\*------------------------------------*/
+
+.page-footer {
+    position: relative;
+}
+
+.page-footer ul li::before {
+    display: none;
+}
+
+.page-footer a {
+    border-bottom: none;
+    transition: all .3s ease-in-out;
+}
+
+.top-footer {
+    padding: 40px 0;
+    background-color: rgba(219,228,238,0.61);
+}
+
+.footer-info {
+    margin-top: 35px;
+    position: relative;
+    width: 240px;
+    padding-left: 75px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #3E5471;
+    text-transform: uppercase;
+}
+
+.footer-info img {
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+
+.footer-address {
+    margin-top: 35px;
+    position: relative;
+    padding-left: 38px;
+    font-size: 18px;
+    color: #3E5471;
+    line-height: 1.6666em;
+}
+
+.footer-address i {
+    position: absolute;
+    left: 0;
+    font-size: 30px;
+    color: #174D9A;
+}
+
+.footer-address p:last-of-type {
+    padding: 0;
+}
+
+.footer-address .btn {
+    margin-top: 22px;
+}
+
+.footer-tel {
+    margin-top: 35px;
+    
+    font-size: 18px;
+    color: #3E5471;
+}
+
+.footer-tel i {
+    position: absolute;
+    left: 0;
+    font-size: 22px;
+    color: #174D9A;
+}
+
+.footer-tel a {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    border-bottom: none;
+}
+
+.footer-tel a:hover,
+.footer-tel a:hover i,
+.footer-link a.back-to-top:hover,
+.back-to-top:hover i {
+    color: #082449;
+}
+
+.back-top {
+    padding-top: 50px;
+}
+
+.back-top a {
+    border-bottom: none;
+    color: #EE5E32;
+    font-size: 16px;
+}
+
+.footer-bottom {
+    background-color: #DBE4EE;
+    padding: 24px 0;
+}
+
+.social-media ul {
+    margin: 0;
+    padding: 0;
+}
+
+.social-media ul li {
+    margin: 0;
+    padding: 0 33px 0 0;
+    float: left;
+}
+
+
+.social-media ul li a {
+    border: none;
+    background-color: #174D9A;
+    border-radius: 4px;
+    color: #fff;
+    width: 38px;
+    height: 38px;
+    color: #E9EEF4;
+    display: block;
+    font-size: 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer-left {
+    padding-top: 25px;
+}
+
+.footer-left .menu-copyright-menu-container {
+    display: inline-block;
+}
+
+.footer-left ul {
+    padding-bottom: 5px;
+}
+
+.footer-left ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0 15px 0 0;
+}
+
+.footer-left ul li a {
+    color: #3E5471;
+    font-size: 15px;
+    border-bottom: none;
+    font-weight: 400;
+}
+
+.footer-left p {
+    color: #3E5471;
+    font-size: 15px;
+    border-bottom: none;
+    font-weight: 400;
+    padding: 0;
+}
+
+.social-media ul li:last-child {
+    padding-right: 0;
+}
+
+.footer-link ul {
+    column-count: 2;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-link ul li {
+    margin: 0;
+    padding: 0 0 15px 0;
+}
+
+.footer-link ul li a {
+    font-size: 17px;
+    font-weight: 400;
+    color: #3E5471;
+}
+
+.footer-link ul li.current-menu-item a {
+    color: #174d9a;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+
+    .top-footer {
+        padding: 44px 0;
+    }
+
+    .footer-address,
+    .footer-tel {
+        margin-top: 40px;
+    }
+
+    .footer-info {
+        margin-top: 0;
+        padding-top: 8px;
+    }
+
+    .footer-bottom {
+        padding: 18px 0;
+    }
+
+    .footer-flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .footer-left {
+        padding: 0;
+        width: calc(100% - 146px);
+    }
+
+    .social-media {
+        width: 146px;
+    }
+
+    .social-media ul li {
+        padding-right: 16px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .top-footer {
+        padding: 90px 0;
+    }
+
+    .footer-info {
+        margin-top: 53px;
+    }
+
+    .footer-address {
+        margin-top: 0;
+        font-size: 19px;
+    }
+
+    .footer-address {
+        width: 264px;
+        line-height: 1.8em;
+    }
+
+    .footer-tel {
+        margin-top: 35px;
+    }
+
+    .back-top {
+        padding: 0;
+    }
+
+    .footer-link ul li a.back-to-top {
+        font-weight: 800;
+        color: #174D9A;
+    }
+    .footer-bottom {
+        padding: 13px 0;
+    }
+
+    .footer-left ul,
+    .footer-left p {
+        display: inline-block;
+    }
+
+    .footer-left ul li {
+        padding-right: 25px;
+    }
+
+    .footer-address .btn:hover {
+        padding-right: 26px;
+    }
+
+    .footer-link ul li a:hover,
+    .footer-left ul li a:hover {
+        color: #174D9A;
+    }
+    
+    .social-media ul li a:hover {
+        background-color: #EE5E32;
+    }
+
+    .footer-address i {
+        top: 5px;
+    }
+}
